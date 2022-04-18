@@ -26,7 +26,7 @@ MonoBehaviour:
   angularVelocity: 0
   startColor: {r: 0.850945, g: 0, b: 1, a: 1}
   useColorOverTime: 1
-  colorCurveUsage: 1
+  colorCurveUsage: 0
   colorCurveTime: 1
   colorOverTime:
     serializedVersion: 2
