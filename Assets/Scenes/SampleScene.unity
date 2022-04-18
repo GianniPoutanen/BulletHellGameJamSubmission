@@ -1088,7 +1088,7 @@ GameObject:
   - component: {fileID: 565610721}
   - component: {fileID: 565610720}
   m_Layer: 0
-  m_Name: TestItem (5)
+  m_Name: Saber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3483,7 +3483,7 @@ GameObject:
   - component: {fileID: 840735087}
   - component: {fileID: 840735086}
   m_Layer: 0
-  m_Name: TestItem (1)
+  m_Name: Big Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3788,7 +3788,7 @@ GameObject:
   - component: {fileID: 1062380579}
   - component: {fileID: 1062380578}
   m_Layer: 0
-  m_Name: TestItem (2)
+  m_Name: Saber 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12548,7 +12548,7 @@ GameObject:
   - component: {fileID: 1862589735}
   - component: {fileID: 1862589734}
   m_Layer: 0
-  m_Name: TestItem (4)
+  m_Name: Laserer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12978,7 +12978,7 @@ GameObject:
   - component: {fileID: 1955653247}
   - component: {fileID: 1955653246}
   m_Layer: 0
-  m_Name: TestItem
+  m_Name: Flare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13079,7 +13079,7 @@ GameObject:
   - component: {fileID: 1960919535}
   - component: {fileID: 1960919534}
   m_Layer: 0
-  m_Name: TestItem (6)
+  m_Name: Saber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13256,7 +13256,7 @@ GameObject:
   - component: {fileID: 2046197135}
   - component: {fileID: 2046197134}
   m_Layer: 0
-  m_Name: TestItem (3)
+  m_Name: Saber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

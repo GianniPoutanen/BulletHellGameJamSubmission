@@ -44,6 +44,8 @@ public class Inventory : MonoBehaviour
         {
             inventory.itemsCollected.Add(item);
         }
+        Debug.Log("The Player now has : " + inventory.itemsCollected[inventory.itemsCollected.IndexOf(item)].amount + " of " + item.name);
+
         inventory.UpdateUI();
     }
 }
