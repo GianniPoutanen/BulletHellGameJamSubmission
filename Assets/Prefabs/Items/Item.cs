@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour, IEquatable<Item>
+public class Item : EntityBase, IEquatable<Item>
 {
     public string description = "This is an Item";
     public Sprite sprite;
@@ -49,6 +49,6 @@ public class Item : MonoBehaviour, IEquatable<Item>
 
     public bool Equals(Item other)
     {
-        return other.sprite == this.sprite;
+        return other.sprite.Equals(this.sprite);
     }
 }
