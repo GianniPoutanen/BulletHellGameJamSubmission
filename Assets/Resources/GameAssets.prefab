@@ -47,3 +47,5 @@ MonoBehaviour:
   soundAudioClips: []
   playerCharacter: {fileID: 0}
   textPopup: {fileID: 2213314682518866230, guid: 0f221c4ccc3317d4589348b93d0dbf09, type: 3}
+  bullets:
+  - {fileID: 2964799679626311696, guid: f71e96e003df50149a7903a272dfa17d, type: 3}

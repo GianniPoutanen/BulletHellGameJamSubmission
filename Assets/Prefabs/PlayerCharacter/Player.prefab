@@ -403,7 +403,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sortingBaseLayer: 0
-  maxHealth: 30
+  maxHealth: 100
+  currentHealth: 0
   walkSpeed: 5
 --- !u!58 &2817689158711142964
 CircleCollider2D:

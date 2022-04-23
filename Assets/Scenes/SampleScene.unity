@@ -3869,6 +3869,7 @@ GameObject:
   - component: {fileID: 653580052}
   - component: {fileID: 653580051}
   - component: {fileID: 653580050}
+  - component: {fileID: 653580054}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3960,6 +3961,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &653580054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653580049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58db3f05491eff44a74b8d226738249, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerHealth: {fileID: 1527293243}
+  player: {fileID: 1315068197}
 --- !u!1 &656128048
 GameObject:
   m_ObjectHideFlags: 0
@@ -5612,6 +5627,17 @@ MonoBehaviour:
     _json: '{"declarations":{"collection":{"$content":[{"name":"WeaponON","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
+--- !u!114 &1315068197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1694022420801450061, guid: 4c521175f049a2442a196aa65d14922d, type: 3}
+  m_PrefabInstance: {fileID: 937952861}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 937952862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b223aecb70821a459a2d3b6ace9e5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1330131202 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4421956119161624712, guid: f87e4b6544c27a64b9641ff6a98ae1c1, type: 3}
