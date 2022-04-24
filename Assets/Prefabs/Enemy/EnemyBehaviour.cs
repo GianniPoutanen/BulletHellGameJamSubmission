@@ -8,12 +8,14 @@ public class EnemyBehaviour : EntityBase
     public float damage;
     public float maxHealth;
     public float health;
+
     public float damageTickTime = 0.1f;
     public float damageTickTimer = 0f;
 
     [Header("Avoidance")]
     public float avoidanceRadius = 1f;
     public float avoidanceStrength = 0.1f;
+
     [Header("Speed")]
     public float chaseSpeed;
 
@@ -61,11 +63,11 @@ public class EnemyBehaviour : EntityBase
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.transform.tag == "Player")
+        if (other.transform.tag == "Player" && damageTickTimer <= 0)
         {
-            GameManager.Instance.playerCharacter.GetComponent<PlayerMovement>().Damage(this.damage);
+            GameManager.Instance.playerCharacter.GetComponent<PlayerBehaviour>().Damage(this.damage);
             PointPopUp.Create(other.transform.position + new Vector3(0, 0.3f, 0), this.damage);
             damageTickTimer = damageTickTime;
         }

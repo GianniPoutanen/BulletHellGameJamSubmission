@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -839683638566955874}
   - component: {fileID: -687838154050579816}
   - component: {fileID: 7066610817874853903}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: OrbitalSword
   m_TagString: Untagged
   m_Icon: {fileID: 0}

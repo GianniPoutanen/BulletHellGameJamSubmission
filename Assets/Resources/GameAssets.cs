@@ -32,6 +32,10 @@ public class GameAssets : MonoBehaviour
     public GameObject playerCharacter;
     public GameObject textPopup;
 
+    [Header("Bullets")]
+    public GameObject[] bullets;
+
+
     #region Pooling 
     //Pooling System Variable
     private Dictionary<string, GameObject> _pools = new Dictionary<string, GameObject>();

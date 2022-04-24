@@ -14,6 +14,13 @@ public class GameManager : MonoBehaviour
     [Range(0f, 2f)]
     public float gameSpeed;
 
+    [Header("Player Global Stats")]
+    public float damageMultiplyer = 1f;
+    public float speedMultiplyer = 1f;
+    public float cooldownMultiplyer = 1f;
+    public float extraShots = 1f;
+
+
     [HideInInspector]
     public GameObject playerCharacter;
 

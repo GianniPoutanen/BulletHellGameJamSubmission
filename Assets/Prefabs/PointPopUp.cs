@@ -18,7 +18,7 @@ public class PointPopUp : MonoBehaviour
         PointPopUp pointPopUp = PointsPopUpTransform.GetComponent<PointPopUp>();
         pointPopUp.Setup(PointsAmount);
         pointPopUp.gameObject.SetActive(true);
-        pointPopUp.disappearTimer = 1;
+        pointPopUp.disappearTimer = 0.2f;
         return pointPopUp;
     }
 

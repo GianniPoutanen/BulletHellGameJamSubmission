@@ -2,21 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : EntityBase
+public class PlayerBehaviour : EntityBase
 {
     [Header("Stats")]
     public float maxHealth;
-    private float currentHealth;
+    public float currentHealth;
     public float walkSpeed;
 
     private Rigidbody2D rigidbody;
     private Animator anim;
+
+    [Header("Flip List")]
+    public GameObject[] objectsToFlip;
 
     void Awake()
     {
         rigidbody = this.GetComponent<Rigidbody2D>();
         anim = this.GetComponent<Animator>();
         GameManager.Instance.playerCharacter = this.gameObject;
+        currentHealth = maxHealth;
     }
 
     public override void FixedUpdate() 
@@ -24,7 +28,10 @@ public class PlayerMovement : EntityBase
         base.FixedUpdate();
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.3f)
         {
-            this.transform.localScale = new Vector3(Mathf.Sign(Input.GetAxis("Horizontal")), 1, 1);
+            foreach(GameObject obj in objectsToFlip)
+            {
+                obj.transform.localScale = new Vector3(Mathf.Sign(Input.GetAxis("Horizontal")), 1, 1);
+            }
         }
 
         if (this.rigidbody.velocity.magnitude > 0.1f)
@@ -45,7 +52,7 @@ public class PlayerMovement : EntityBase
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
-            /// death
+            /// death TODO
         }
     }
 
