@@ -15,6 +15,7 @@ public class EnemyBehaviour : EntityBase
     [Header("Avoidance")]
     public float avoidanceRadius = 1f;
     public float avoidanceStrength = 0.1f;
+
     [Header("Speed")]
     public float chaseSpeed;
 

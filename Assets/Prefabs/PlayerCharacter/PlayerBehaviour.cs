@@ -12,6 +12,9 @@ public class PlayerBehaviour : EntityBase
     private Rigidbody2D rigidbody;
     private Animator anim;
 
+    [Header("Flip List")]
+    public GameObject[] objectsToFlip;
+
     void Awake()
     {
         rigidbody = this.GetComponent<Rigidbody2D>();
@@ -25,7 +28,10 @@ public class PlayerBehaviour : EntityBase
         base.FixedUpdate();
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.3f)
         {
-            this.transform.localScale = new Vector3(Mathf.Sign(Input.GetAxis("Horizontal")), 1, 1);
+            foreach(GameObject obj in objectsToFlip)
+            {
+                obj.transform.localScale = new Vector3(Mathf.Sign(Input.GetAxis("Horizontal")), 1, 1);
+            }
         }
 
         if (this.rigidbody.velocity.magnitude > 0.1f)
@@ -46,7 +52,7 @@ public class PlayerBehaviour : EntityBase
         currentHealth -= amount;
         if (currentHealth <= 0)
         {
-            /// death
+            /// death TODO
         }
     }
 
